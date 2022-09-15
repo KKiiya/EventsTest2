@@ -1,0 +1,4 @@
+name: Eventstest2
+version: '${project.version}'
+main: me.notlewx.eventstest2.Eventstest2
+prefix: [ NotLew_x (ET2) ]
