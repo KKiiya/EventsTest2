@@ -9,5 +9,4 @@ public class PistonMoveEvent implements Listener {
     public static void onPistonExtend(BlockPistonExtendEvent e) {
         e.setCancelled(true);
     }
-
 }

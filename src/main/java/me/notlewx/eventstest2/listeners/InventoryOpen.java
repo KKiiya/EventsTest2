@@ -1,13 +1,11 @@
 package me.notlewx.eventstest2.listeners;
 
 import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.Listener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.ChatColor;
 import org.bukkit.event.inventory.InventoryOpenEvent;
-
 public class InventoryOpen implements Listener {
     @EventHandler
     @Deprecated

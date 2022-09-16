@@ -1,5 +1,6 @@
 package me.notlewx.eventstest2.listeners;
 
+import me.notlewx.eventstest2.files.CustomConfig;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -18,8 +19,10 @@ public class BlockBreak implements Listener {
         Location l = p.getLocation();
         Material b = p.getTargetBlock(null, 999999).getType();
         String d = String.valueOf(b);
-        p.sendTitle(ChatColor.GOLD + "YOU BROKE A BLOCK", ChatColor.YELLOW + "Block name: " + d.toLowerCase().replace("_", " "));
-        System.out.println("The player " + c + "broke the block " + d.toLowerCase().replace("_", " "));
+
+        p.sendTitle(ChatColor.YELLOW + "YOU BROKE A BLOCK", ChatColor.YELLOW + "Block name: " + d.toLowerCase().replace("_", " "));
         p.playSound(l, Sound.BLOCK_NOTE_PLING, 1, 1);
+
+        System.out.println("The player " + c + " broke the block " + d.toLowerCase().replace("_", " "));
     }
 }
